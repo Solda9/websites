@@ -24,16 +24,13 @@ function display(input) {
     }
 
     if(reset === true) {
-        if(input === '/' || input === '*' || input === '-' || input === '+' || input === '.') {
-            input = '';
-        }
-        else {
-            reset = false;
+        if(input !== '/' && input !== '*' && input !== '-' && input !== '+') {
             document.getElementById("result").value = '';
         }
+        reset = false;
     }
     else if(input === '/' || input === '*' || input === '-' || input === '+' || input === '.') {
-        if(resultLength === 0) {
+        if(resultLength === 0 && input !== '.') {
             input = '';
         }
         else if(resultLength > 0) {
@@ -61,6 +58,9 @@ function display(input) {
                     input = '';
                 }
             }
+        }
+        else {
+            input = '0.';
         }
     }
     else if(input === '0' && prevInput === '0') {
