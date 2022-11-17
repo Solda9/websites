@@ -1,0 +1,68 @@
+html {
+    background: lightsteelblue;
+}
+
+/* table */
+#calc {
+    background: lightgray;
+    border: 10px solid slategray;
+    padding: 15px;
+    margin: auto;
+    position:absolute;
+    top: 0; bottom: 0; left: 0; right: 0;
+    border-bottom-right-radius: 20px;
+    border-bottom-left-radius: 20px;
+}
+
+/* table caption */
+#title {
+    font-size: 30px;
+    font-weight: bold;
+    background: lightgray;
+    border: 10px solid slategray;
+    border-bottom-width: 0;
+    border-top-right-radius: 20px;
+    border-top-left-radius: 20px;
+}
+
+/* display box */
+#result {
+    background: lightslategray;
+    height: 50px; width: 200px;
+    text-align: right;
+    border: 5px solid darkslategray;
+    border-radius: 10px;
+    font-size: 30px;
+}
+
+/* buttons */
+.button {
+    display: block;
+    width: 100%;
+    padding: 15px 25px;
+    font-size: 30px;
+    font-weight: bold;
+    text-align: center;
+    cursor: pointer;
+    outline: none;
+    color: #fff;
+    background-color: #04AA6D;
+    border: none;
+    border-radius: 15px;
+    box-shadow: 0 8px green;
+}
+
+.button:hover {
+    background-color: #3e8e41;
+    box-shadow: 0 8px darkgreen;
+}
+
+.button:active {
+    background-color: #3e8e41;
+    box-shadow: 0 0;
+    transform: translateY(6px);
+}
+
+.button.override:active {
+    transform: translateY(8px);
+}
