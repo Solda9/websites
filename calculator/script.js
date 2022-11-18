@@ -17,6 +17,7 @@ for(let i = 0; i < buttonList.length; i++) {
 
 // function to display the digits
 function display(input) {
+	navigator.vibrate(50);
 	let result = document.getElementById("result").value;
 	let resultLength = getCharacterLength(result);
 	let prevInput = ''
