@@ -17,7 +17,7 @@ for(let i = 0; i < buttonList.length; i++) {
 
 // function to display the digits
 function display(input) {
-	navigator.vibrate(30);
+	navigator.vibrate(40);
 	let result = document.getElementById("result").value;
 	let resultLength = getCharacterLength(result);
 	let prevInput = ''
@@ -152,7 +152,7 @@ function display(input) {
 
 // function to evaluate the digits and display the result
 function solve() {
-	navigator.vibrate(30);
+	navigator.vibrate(40);
 	let result = document.getElementById("result").value;
 	if(negative_number === true){
 		result += ')'
@@ -164,7 +164,7 @@ function solve() {
 
 // function to clear the display
 function clr() {
-	navigator.vibrate(30);
+	navigator.vibrate(40);
 	document.getElementById("result").value = '';
 	reset = false;
 	negative_number = false;
