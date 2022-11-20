@@ -208,6 +208,7 @@ function isValidDate(date) {
 
 // function to get a string with the first 3 consonants (or vowels if no more consonants)
 function getFirstThreeConsonants(string, check_skip) {
+	string = string.replace(/\s+/g, "");
 	var length = getCharacterLength(string);
 	var string1 = "";
 	var counter = 0;
