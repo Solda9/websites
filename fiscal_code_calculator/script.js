@@ -155,18 +155,18 @@ function calculate() {
 	
 	// get values from page inputs
 	var name = document.getElementById("name").value.toUpperCase();
-	if(name == "") {alert("You must also indicate the name."); return;}
+	if(name == "") {navigator.vibrate(100); alert("You must also indicate the name."); return;}
 	
 	var surname = document.getElementById("surname").value.toUpperCase();
-	if(surname == "") {alert("You must also indicate the surname."); return;}
+	if(surname == "") {navigator.vibrate(100); alert("You must also indicate the surname."); return;}
 	
 	var birth_place = document.getElementById("birth_place").value.toUpperCase();
-	if(birth_place == "") {alert("You must also indicate the birth place."); return;}
+	if(birth_place == "") {navigator.vibrate(100); alert("You must also indicate the birth place."); return;}
 	
 	var sex = document.getElementById("sex").value;
 	
 	var date = new Date(document.getElementById("birth_date").value);
-	if(!isValidDate(date)) {alert("You must also indicate the birth date."); return;}
+	if(!isValidDate(date)) {navigator.vibrate(100); alert("You must also indicate the birth date."); return;}
 	
 	// calculate fiscal code
 	surname = getFirstThreeConsonants(surname, false);
