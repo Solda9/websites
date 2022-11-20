@@ -1,0 +1,79 @@
+html {
+	background: lightsteelblue;
+}
+
+label, #calculate {
+	font-size: 20px;
+	font-weight: bold;
+}
+
+/* table */
+#data_input {
+	background: lightgray;
+	border: 10px solid slategray;
+	padding: 15px;
+	margin: auto;
+	position: absolute;
+	top: 0; bottom: 0; left: 0; right: 0;
+	border-bottom-right-radius: 20px;
+	border-bottom-left-radius: 20px;
+}
+
+/* table caption */
+#title {
+	font-size: 30px;
+	font-weight: bold;
+	background: lightgray;
+	border: 10px solid slategray;
+	border-bottom-width: 0;
+	border-top-right-radius: 20px;
+	border-top-left-radius: 20px;
+}
+
+/* display box */
+#result {
+	font-weight: bold;
+	background: lightslategray;
+	/* height: 50px; */
+	width: 412px;
+	margin-top: 20px;
+	text-align: center;
+	border: 5px solid darkslategray;
+	border-radius: 10px;
+	font-size: 30px;
+}
+
+/* calculate button */
+#calculate {
+	/* display: block; */
+	/* margin: auto; */
+	width: 202px;
+	margin-top: 20px;
+	/* margin-left: 50px; */
+	outline: auto;
+	text-align: center;
+	border-radius: 5px;
+	font-size: 30px;
+}
+
+/* buttons */
+.input {
+	display: block;
+	/* width: 100%; */
+	/* padding: 15px 25px; */
+	font-size: 25px;
+	/* font-weight: bold; */
+	text-align: center;
+	/* cursor: pointer; */
+	outline: auto;
+	/* color: #fff; */
+	background-color: #49ce9d;
+	/* border: 100px; */
+	border-radius: 5px;
+	/* box-shadow: 0 8px green; */
+}
+
+#sex {
+	width: 100%;
+	padding-right: 62px;
+}

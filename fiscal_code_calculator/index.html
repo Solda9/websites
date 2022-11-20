@@ -6,26 +6,19 @@
 		
 		<meta charset="utf-8">
 		<meta name="viewport" content="width=device-width, initial-scale=1">
-		<title></title>
+		<title>Fiscal Code Calculator</title>
 	</head>
 	<body>
 		<table id="data_input">
 			<caption id="title">FISCAL CODE CALCULATOR</caption>
 			<tr>
-				<td colspan="2">
+				<td colspan="3">
 					<label for="name">First Name</label>
 					<input type="text" class="input" id="name"/>
 				</td>
-				<td colspan="2">
+				<td colspan="3">
 					<label for="surname">Last Name</label>
 					<input type="text" class="input" id="surname">
-				</td>
-				<td>
-					<label for="sex">Sex</label>
-					<select id="sex">
-						<option value="M">M</option>
-						<option value="F">F</option>
-					</select>
 				</td>
 			</tr>
 			<tr>
@@ -33,17 +26,24 @@
 					<label for="birth_place">Birth Place</label>
 					<input type="text" class="input" id="birth_place"/>
 				</td>
+				<td>
+					<label for="sex">Sex</label>
+					<select class="input" id="sex">
+						<option value="M">M</option>
+						<option value="F">F</option>
+					</select>
+				</td>
 				<td colspan="2">
 					<label for="birth_date">Birth Date</label>
 					<input type="date" class="input" id="birth_date">
 				</td>
 			</tr>
 			<tr>
-				<td colspan="4">
+				<td colspan="5">
 					<input type="text" id="result" readonly>
 				</td>
 				<td>
-					<input type="button" value="Calculate" onclick="calculate()">
+					<input type="button" id="calculate" value="Calculate" onclick="calculate()">
 				</td>
 			</tr>
 		</table>
