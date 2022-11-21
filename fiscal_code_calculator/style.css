@@ -34,7 +34,7 @@ label, #calculate {
 #result {
 	font-weight: bold;
 	background: lightslategray;
-	width: 412px;
+	width: 354px;
 	margin-top: 20px;
 	text-align: center;
 	border: 5px solid darkslategray;
@@ -44,7 +44,7 @@ label, #calculate {
 
 /* calculate button */
 #calculate {
-	width: 202px;
+	width: 268px;
 	margin-top: 20px;
 	outline: auto;
 	text-align: center;
@@ -52,7 +52,7 @@ label, #calculate {
 	font-size: 30px;
 }
 
-/* buttons */
+/* inputs */
 .input {
 	display: block;
 	font-size: 25px;
@@ -64,5 +64,9 @@ label, #calculate {
 
 #sex {
 	width: 100%;
-	padding-right: 62px;
+	/* padding-right: 62px; */
+}
+
+#birth_date {
+	width: 264px;
 }
