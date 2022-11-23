@@ -101,6 +101,9 @@ function display(input) {
 					input = '';
 					break;
 				}
+				else if(prevInput === '/' || prevInput === '*' || prevInput === '-' || prevInput === '+') {
+					break;
+				}
 			}
 		} 	
 	}
